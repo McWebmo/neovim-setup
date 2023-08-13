@@ -36,7 +36,10 @@ return packer.startup(function(use)
   -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
+	
+	use("kyazdani42/nvim-web-devicons") -- vs code icons
 
+	use("nvim-tree/nvim-tree.lua") -- file explorer
   if packer_bootstrap then
     require("packer").sync()
   end
